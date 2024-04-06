@@ -8,20 +8,30 @@
     <link rel="stylesheet" type="text/css" href="../static/styles/6-filters.css?cache_id={{ cache_id }}">
     <link type="text/css" rel="stylesheet" href="../static/styles/8-places.css?cache_id={{ cache_id }}">
     <link rel="icon" href="../static/images/icon.png" />
+    <link rel="stylesheet" type="text/css" href="../static/styles/3-header.css">
     <title>HBnB</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="../static/scripts/1-hbnb.js?cache_id={{ cache_id }}"></script>
-	<style>
-		/* Style for the checkbox */
-		.amenities input[type="checkbox"] {
-		  position: absolute;
-		  left: -10px; /* 10px to the left */
-		}
-	</style>
+    <script src="../static/scripts/2-hbnb.js?cache_id={{ cache_id }}"></script>
+    <style>
+        #api_status {
+          position: absolute;
+          right: 30px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #cccccc;
+          text-align: center;
+          line-height: 40px;
+          color: white;
+        }
+    </style>
 </head>
 <body>
 <header>
     <div class="logo"></div>
+    <div id ="api_status" class="available"></div>
 </header>
 <div class="container">
     <section class="filters">
